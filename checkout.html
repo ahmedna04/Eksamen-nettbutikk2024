@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout siden</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <form action="#" method="get" class="searchbar">
+           <input type="text" placeholder="Søk etter produkter..." name="search"> 
+        </form>
+        <nav>
+            <a href="index.html">Hjem</a>
+            <a href="product.html">Produkter</a>
+            <a href="index.html" class="logo">Logo</a>
+            <a href="#Kategorier">Kategorier</a>
+            <a href="#footer">Kontakt oss</a>
+            <a href="checkout.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            </a>
+            
+        </nav>
+    </header>
+    <main>
+         <h1>Kassen</h1>
+         <ul>
+            <li>
+                <article>
+                    <h2>Jeans</h2>
+                    <img src="img/jeans.jpg" alt="Produktnavn">
+                    <p>Produktnavn</p>
+                    <p>Pris: 499 kr</p>
+                    <p>Farge: Blå</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h2>Jeans</h2>
+                    <img src="img/jeans.jpg" alt="Produktnavn">
+                    <p>Produktnavn</p>
+                    <p>Pris: 599 kr</p>
+                    <p>Farge: Svart</p>
+                </article>
+            </li>
+        </ul>
+    
+
+    
+    <section>
+        <h2>Personopplysninger</h2>
+        <form action="#">
+            <label for="fornavn">Fornavn:</label>
+            <input type="text" id="fornavn" name="fornavn" required>
+
+            <label for="etternavn">Etternavn:</label>
+            <input type="text" id="etternavn" name="etternavn" required>
+
+            <label for="adresse">Gateadresse:</label>
+            <input type="text" id="adresse" name="adresse" required>
+
+            <label for="postnummer">Postnummer:</label>
+            <input type="text" id="postnummer" name="postnummer" required>
+
+            <label for="poststed">Poststed:</label>
+            <input type="text" id="poststed" name="poststed" required>
+
+            <button type="submit">Lagre</button>
+            <button type="reset">Avbryt</button>
+        </form>
+    </section>
+
+    
+    <section>
+        <h2>Levering</h2>
+        <form>
+            <label>
+                <input type="radio" name="levering" value="hjem" required>
+                Ekspresslevering hjem
+            </label>
+            <label>
+                <input type="radio" name="levering" value="utlevering">
+                Ekspress pakke til utleveringssted
+            </label>
+            <label>
+                <input type="radio" name="levering" value="standard">
+                Standard hjemlevering
+            </label>
+        </form>
+    </section>
+
+    
+    <section>
+        <h2>Betaling</h2>
+        <form>
+            <label for="kortnummer">Kortnummer:</label>
+            <input type="text" id="kortnummer" name="kortnummer" required>
+
+            <label for="utløpsdato">Utløpsdato:</label>
+            <input type="text" id="utløpsdato" name="utløpsdato" required>
+
+            <label for="cvc">CVC:</label>
+            <input type="text" id="cvc" name="cvc" required>
+
+            <label>
+                <input type="checkbox" name="samtykke" required>
+                Ja, jeg godtar vilkårene.
+            </label>
+            <label>
+                <input type="checkbox" name="nyhetsbrev">
+                Ja takk! Send nyhetsbrev til meg.
+            </label>
+
+            <button type="submit">Fullfør kjøp</button>
+        </form>
+    </section>
+    </main>
+    <footer id="footer">
+        <section class="footer-seksjon">
+            <h3>Kontakt oss her</h3>
+            <p>Adress: Gateveien 5, 1605</p>
+            <p>Telefon: 12 34 56 78</p>
+            <p>E-post: halden@hiof.no</p>
+            <p>Åpningstider: Stenger 16:00</p>
+        </section>
+        <section class="footer-seksjon">
+            <h3>Snarveier</h3>
+            <a href="index.html">Hjem</a>
+            <a href="#Produkter">Produkter</a>
+            <a href="#Kategorier">Kategorier</a>
+            <a href="#footer">Kontakt oss</a>
+
+
+            <h3>Følg oss her</h3>
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://no.pinterest.com">Pinterest</a>
+
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+ body{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 1200px; 
+    padding: 1rem;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.5rem;
+    align-items: center;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%; 
+}
+
+
+header .searchbar input {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+}
+
+
+ footer{
+    background-color: #222;
+    color: white;
+    padding: 1rem;
+}
+
+footer .footer-seksjon {
+    margin-bottom: 1rem;
+    text-align: center; 
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+.Banner {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #ddd;
+}
+
+.Banner a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.Banner a:hover {
+    background-color: #f0f0f0;
+}
+
+
+#Produkter {
+    margin-top: 2rem;
+}
+
+#Produkter .product-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr; 
+}
+
+
+#Kategorier .kategori-liste {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+}
+
+
+#Anmeldelser .Anmeldelser-liste {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+}
+
+
+.brødsmulesti {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.brødsmulesti li i {
+    color: #999;
+}
+
+.produkt-bilder img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#relaterte-produkter ul.product-list {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    
+    body {
+        padding: 2rem;
+    }
+
+    header nav {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    header nav a {
+        width: auto; 
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    footer .footer-seksjon:first-of-type {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    footer .footer-seksjon:not(:first-of-type) {
+        display: inline-block;
+        width: calc(33.33% - 20px);
+        margin: 0 10px;
+        vertical-align: top;
+    }
+
+  
+    #Produkter .product-list {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    
+    #Kategorier .kategori-liste {
+
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    #Kategorier .kategori-liste li:nth-child(4) {
+        grid-column: span 2; 
+    }
+
+    #Kategorier .kategori-liste li:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    
+    .produkt-bilder {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 700px;
+    }
+
+    .produkt-informasjon {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 440px;
+        margin-left: 2rem;
+    }
+
+    .små-produkt-bilder {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .små-produkt-bilder img {
+        max-width: 160px;
+    }
+
+    #relaterte-produkter .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+

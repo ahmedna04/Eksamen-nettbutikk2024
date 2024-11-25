@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkt siden</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <form action="#" method="get" class="searchbar">
+           <input type="text" placeholder="Søk etter produkter..." name="search"> 
+        </form>
+        <nav>
+            <a href="index.html">Hjem</a>
+            <a href="product.html">Produkter</a>
+            <a href="index.html" class="logo">Logo</a>
+            <a href="#Kategorier">Kategorier</a>
+            <a href="#footer">Kontakt oss</a>
+            <a href="checkout.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <nav aria-label="brødsmulesti">
+            <ul class="brødsmulesti">
+                <li><a href="index.html">Hjem</a></li>
+                <li><i class="fa-solid fa-angle-right"></i></li>
+                <li><a href="#Kategori">Kategorier</a></li>
+                <li><i class="fa-solid fa-angle-right"></i></li>
+                <li>Produktnavn</li>
+            </ul>
+        </nav>
+        
+        <section class="produkt-bilder">
+            <h2>Produkt bilder</h2>
+            <img src="img/Jakke.jpg" alt="Hovedproduktbilde">
+            <div class="små-produkt-bilder">
+            <img src="img/Jakke.jpg" alt="Bilde1">
+            <img src="img/Jakke.jpg" alt="Bilde2">
+            <img src="img/Jakke.jpg" alt="Bilde3">
+            </div>
+        </section>
+
+        <article class="produkt-informasjon">
+            <h1>Produktnavn</h1>
+            <a href="#">MERKENAVN</a>
+            <p>Pris: 1299 kr inkl. mva.</p>
+            <p>Farge: gul</p>
+
+            <label for="størrelse">Velg størrelse</label>
+            <select id="størrelse" name="størrelse">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+
+            <button type="button" class="legg-i-kurven">Legg i handlekurven</button>
+        </article>
+
+        <section id="relaterte-produkter">
+            <h2>Relaterte produkter</h2>
+            <ul class="product-list">
+                <li>
+                    <article>
+                    <img src="img/jeans.jpg" alt="Relatert-produkt1">
+                    <a href="#"><h3>Produktnavn</h3></a>
+                    <p>1499 kr</p>
+                </article>
+                </li>
+                <li>
+                    <article>
+                    <img src="img/jeans.jpg" alt="Relatert-produkt1">
+                    <a href="#"><h3>Produktnavn</h3></a>
+                    <p>1499 kr</p>
+                </article>
+                </li>
+                <li>
+                    <article>
+                    <img src="img/jeans.jpg" alt="Relatert-produkt1">
+                    <a href="#"><h3>Produktnavn</h3></a>
+                    <p>1499 kr</p>
+                </article>
+                </li>
+                <li>
+                    <article>
+                    <img src="img/jeans.jpg" alt="Relatert-produkt1">
+                    <a href="#"><h3>Produktnavn</h3></a>
+                    <p>1499 kr</p>
+                </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer id="footer">
+        <section class="footer-seksjon">
+            <h3>Kontakt oss her</h3>
+            <p>Adress: Gateveien 5, 1605</p>
+            <p>Telefon: 12 34 56 78</p>
+            <p>E-post: halden@hiof.no</p>
+            <p>Åpningstider: Stenger 16:00</p>
+        </section>
+        <section class="footer-seksjon">
+            <h3>Snarveier</h3>
+            <a href="index.html">Hjem</a>
+            <a href="#Produkter">Produkter</a>
+            <a href="#Kategorier">Kategorier</a>
+            <a href="#footer">Kontakt oss</a>
+
+
+            <h3>Følg oss her</h3>
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://no.pinterest.com">Pinterest</a>
+
+        </section>
+    </footer>
+</body>
+</html>
